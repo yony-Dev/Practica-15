@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Turismo en El Salvador</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand " href="#">Turismo SV</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lugares">Lugares</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrusel -->
+  <div id="carouselTurismo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://everythingelsalvador.com/wp-content/uploads/2022/11/El-Tunco-Travel-Guide.webp" class="d-block w-100"style="height: 25rem; object-fit: cover;" alt="Playa El Tunco">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+          <h5>Playa El Tunco</h5>
+          <p>Surf y atardeceres en La Libertad.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://xpot.sv/wp-content/uploads/2025/05/ED-91-Playa-de-oriente-18.jpg" class="d-block w-100"style="height: 25rem; object-fit: cover;" alt="Ruinas Tazumal">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+          <h5>Mirador Espiritu De La montaña</h5>
+          <p>Los mejores atarderdeceres en La Union.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://elsalvador.travel/system/wp-content/uploads/2024/08/izalco-01.jpg" class="d-block w-100" style="height: 25rem; object-fit: cover;"alt="Volcán de Izalco">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+          <h5>Volcán de Izalco</h5>
+          <p>La aventura de escalar un volcán activo.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTurismo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselTurismo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Sección de lugares turísticos -->
+  <section id="lugares" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Lugares Turísticos Destacados</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+         <div class="card h-100 shadow-sm hover-shadow transition" style="transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/6f/7a/f0.jpg" class="card-img-top" alt="Suchitoto">
+            <div class="card-body">
+              <h5 class="card-title">Suchitoto</h5>
+              <p class="card-text">Ciudad colonial llena de historia, arte y cultura.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm hover-shadow transition" style="transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="https://elsalvador.travel/system/wp-content/uploads/2020/01/CerroVerde1.jpg" class="card-img-top" alt="Cerro Verde">
+            <div class="card-body">
+              <h5 class="card-title">Cerro Verde</h5>
+              <p class="card-text">Parque natural ideal para senderismo y naturaleza.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm hover-shadow transition" style="transition: transform 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="https://olaspermanentes.surf/wp-content/uploads/2023/08/Lago-de-Coatepeque-1.jpg" class="card-img-top" alt="Lago de Coatepeque">
+            <div class="card-body">
+              <h5 class="card-title">Lago de Coatepeque</h5>
+              <p class="card-text">Un lago volcánico con vistas increíbles y actividades acuáticas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contacto" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contáctanos</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="bg-primary text-white text-center py-3">
+    <p class="mb-0">© 2025 Yony Benitez - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
